@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(134, 45, 45);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+hr {
+    background-color: rgb(54, 54, 54);
+    padding: 1px;
+}
+
+input, label, button {
+    margin-top: 5px;
+    font-size: large;
+    
+}
+
+button {
+    border-style: solid;
+    border-color: rgb(43, 43, 43);
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgb(134, 45, 45);
+    border-radius: 30%;
+}
+
+main {
+
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgb(43, 43, 43);
+    background-color: rgb(209, 206, 206);
+    border-radius: 5%;
+    border-width: 6px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+.form1 {
+    animation-name: openFormY;
+    animation-duration: 2s;
+}
+
+.trans1 {
+    animation: openLabel 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+
+}
+
+.trans2 {
+    animation: openLabel 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+.trans3 {
+    animation: openLabel 2s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+
+
+@keyframes openLabel {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    } to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes openFormY{
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    } to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
